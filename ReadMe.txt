@@ -7,3 +7,5 @@ Russian checkers artificial intelligence algorithm. It is written on the basis o
 Because the algorithm uses recursion, there have been attempts to reduce memory consumption. Information about checkers moves and is stored in bits. But instead of bit operations using multiplication and division by a power of two. This was done to cross-platform using and entertainment.
 
 Stack and Queue classes on project was written to improve c++ coding skills.  
+
+For the game in the console use playTestConsole function of class Checkers.
