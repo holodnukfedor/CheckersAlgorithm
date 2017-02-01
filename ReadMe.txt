@@ -2,39 +2,8 @@
     CONSOLE APPLICATION : CheckersAlgorithm Project Overview
 ========================================================================
 
-AppWizard has created this CheckersAlgorithm application for you.
+Russian checkers artificial intelligence algorithm. It is written on the basis of the alpha-beta pruning algorithm. The algorithm used on the site http://f0116700.xsph.ru/, what is russian checkers site.
 
-This file contains a summary of what you will find in each of the files that
-make up your CheckersAlgorithm application.
+Because the algorithm uses recursion, there have been attempts to reduce memory consumption. Information about checkers moves and is stored in bits. But instead of bit operations using multiplication and division by a power of two. This was done to cross-platform using and entertainment.
 
-
-CheckersAlgorithm.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
-
-CheckersAlgorithm.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-CheckersAlgorithm.cpp
-    This is the main application source file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named CheckersAlgorithm.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
+Stack and Queue classes on project was written to improve c++ coding skills.  
