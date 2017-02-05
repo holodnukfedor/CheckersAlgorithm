@@ -45,3 +45,34 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+Debug/Checkers.87392FEC.tlog/cl.command.1.tlog
+*.tlog
+Debug/Checkers.87392FEC.tlog/CL.read.1.tlog
+*.tlog
+Debug/Checkers.87392FEC.tlog/link.read.1.tlog
+*.log
+Debug/Checkers.87392FEC.tlog/link.read.1.tlog
+Debug/Checkers.87392FEC.tlog/cl.command.1.tlog
+*.tlog
+Debug/Checkers.obj
+*.log
+*.idb
+Debug/vc120.pdb
+Debug/Position.obj
+*.obj
+Debug/vc120.idb
+*.obj
+*.tlog
+Debug/Checkers.obj
+*.obj
+Debug/Queue.obj
+*.obj
+Debug/DefeatedMarker.obj
+*.log
+Debug/DefeatedMarker.obj
+*.pdb
+Debug/Move.obj
+*.obj
+Debug/ListNode.obj
+*.tlog
+Debug/Checkers.87392FEC.tlog/link.command.1.tlog
