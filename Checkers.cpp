@@ -325,7 +325,7 @@ int Checkers::search(const bool forBlack, short alpha, short beta, char depth)
 {
 	wasBattleMove = false;
 	short score = -NO_MOVES;
-	short tmp = alpha;
+	short tmp;
 
 	if (depth <= 0) return evaluate(forBlack);
 
@@ -346,10 +346,10 @@ int Checkers::search(const bool forBlack, short alpha, short beta, char depth)
 			/*this->printCheckersField();
 			cout << endl;*/
 
-			//tmp = -search(!forBlack, -(alpha + 1), -alpha, depth - 1);
-			//if (tmp > alpha && tmp < beta) {
+			tmp = -search(!forBlack, -(alpha + 1), -alpha, depth - 1);
+			if (tmp > alpha && tmp < beta) {
 				tmp = -search(!forBlack, -beta, -tmp, depth - 1);
-			//}
+			}
 
 			unmakeMove(forBlack, index, oldValue, defeatedCheckersIndexes);
 			wasBattleMove = currentWasBattleMove;
@@ -359,14 +359,14 @@ int Checkers::search(const bool forBlack, short alpha, short beta, char depth)
 		}
 	}
 	delete moveQueue;
-	return score - DEPTH_VALUE * depth;
+	return score;
 }
 
 Move Checkers::getNextMove(const bool &isBlack)//нужно правильно описать, если первый ход лучший
 {
 	wasBattleMove = false;
 	short score = -INF_SUPERIORITY;
-	short tmp = -INF_SUPERIORITY;
+	short tmp;
 
 	short alpha = -INF_SUPERIORITY;
 	short beta = INF_SUPERIORITY;
@@ -395,10 +395,10 @@ Move Checkers::getNextMove(const bool &isBlack)//нужно правильно описать, если п
 			this->printCheckersField();
 			cout << endl;*/
 
-			//tmp = -search(!isBlack, -(alpha + 1), -alpha, _startDepth);
-			//if (tmp > alpha && tmp < beta) {
+			tmp = -search(!isBlack, -(alpha + 1), -alpha, _startDepth);
+			if (tmp > alpha && tmp < beta) {
 				tmp = -search(!isBlack, -beta, -tmp, _startDepth);
-			//}
+			}
 
 			unmakeMove(isBlack, index, oldValue, defeatedCheckersIndexes);
 			wasBattleMove = currentWasBattleMove;

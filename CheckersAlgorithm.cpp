@@ -12,11 +12,11 @@ int main(int argc, char* argv[])
 	/*int difficultyLevel = strtol("4", NULL, 10);
 	char * whiteCheckers = "a10c10e10g10b20d20f20h20a30c30e30g30";
 	char * blackCheckers = "b80d80f80h80a70c70e70g70b60d60f60h60";
-	bool isPlayerMove = true;
+	bool isPlayerMove = false;
 	bool isPlayerColorblack = false;
 	char * playerMoveStr = "b4c5";
-	bool isBattleMove = 0;
-	argc = 9;*/
+	bool isBattleMove = 0;*/
+	//argc = 9;
 
 	/*for (int i = 0; i < argc; ++i) cout << argv[i] << " ";
 	cout << endl;*/

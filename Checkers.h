@@ -33,7 +33,6 @@ private:
 	static const char FIELD_LENGTH = 64;
 	static const int INF_SUPERIORITY = 32767;
 	static const char NO_MOVES = 127;
-	static const char DEPTH_VALUE = 100;
 	unsigned char * _checkersField[FIELD_LENGTH];
 	unsigned char * _whiteCheckers;
 	unsigned char * _blackCheckers;
